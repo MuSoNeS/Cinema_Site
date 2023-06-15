@@ -71,11 +71,10 @@ ul li{
 
 .header{
     background-color: darkslateblue;/*Цвет фона*/
-    height: 160px;/*Высота div класса header*/
     font-size: 0.8em;/*размер шрифта*/
     margin-left: 0px;/*внешние отступы слева и справа*/
     margin-right: 0px;
-    min-width: 900px;/**/
+    min-width: 50%;/**/
 
 }
 
@@ -112,26 +111,23 @@ ul li{
 }
 
 .menubar{
-    width: 900px;
-    height: 46px;
-    
-}
+    height: 60px;
+    display: flex;
+    justify-content: center;
 
-ul.menu{
-    background-color: darkslateblue;
-    width:auto;
-    
-    
-    
 }
 
 ul.menu li{
-    float: left;
-    padding: 0 0 0 9px;
+    display: inline-block;
+    padding: 4px 0 0 9px;
     list-style: none;
     margin: 1px 2px 0 0;
-    
-    
+    background-color:darkslateblue ;
+    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 ul.menu li a{
@@ -153,7 +149,7 @@ ul.menu li a:hover{/*hover - псевдокласс, меняет цвет пр�
 }
 
 .site_content{
-    width: 880px;
+    width: 50%;
     overflow: hidden;/*Скрывает контент за заданной размерностью*/
     margin: 20px auto 0 auto;
     background-color: white;
@@ -161,12 +157,12 @@ ul.menu li a:hover{/*hover - псевдокласс, меняет цвет пр�
 
 .sitebar_content{
     float: right;  
-    width: 224px;
+    width: 25%;
 }
 
 .sitebar{
     float: right;
-    width: 222px;
+    width: 90%;
     padding: 5px;
     border: solid 1px #f2f2f2 ;/*Рамка вокруг div, solid - тип рамки, толщина, цвет*/
     border-radius: 5%;/*Закругление рамки*/
@@ -205,7 +201,7 @@ ul.menu li a:hover{/*hover - псевдокласс, меняет цвет пр�
 
 .content{
     text-align: left;
-    width: 620px;
+    width: 50%;
     padding: 0 0 0 5px;
     float: left;
 }
@@ -219,30 +215,29 @@ ul.menu li a:hover{/*hover - псевдокласс, меняет цвет пр�
 .films_block img{
     border-radius: 5px;
     border: solid 5px #f2f2f2;
-    width: 22%;
+    width: 20%;
 }
 
 .posts, .post_content{
     font-size: 0.8em;
 }
 
-.info_film_page{
-    margin: 2%;
-    margin-bottom: 4%;
+.info_film{
+padding: 2px 2px 2px 2px;
 }
 
-.info_film_page .label{
+.info_film .label{
     font-size: 1.2em;
 }
 
-.info_film_page .value{
+.info_film .value{
     font-size: 1em;
     color: #49945a;
-    margin-right: 3%;
+
 }
 
 .description_film{
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 .description_film img{
     float: left;
@@ -279,23 +274,26 @@ font-size: 0.9em;
 
 .send input[type = "text"]{
 border: solid 1px #c3c3c3;
+width: 49%;
 margin-bottom: 2%;
 border-radius: 5px;
 } 
 
 .send input[type = "submit"]{
-width: 550px;
+width: 51%;
 background-color: #7268ad;
 padding: 2%;
 color: white;
 border-radius: 5px;
 }
 
+
+
 .info_film{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     background-color: #f9f9f9;
     padding: 5%;
-    width: 525px;
+    width: 60%;
     height: 270px;
 }
 .info_film img{
@@ -322,15 +320,15 @@ border-radius: 5px;
 }
 
 table{
-    width: 70%;
+    width: 65%;
     border: solid 1px #f4f4f4;
 }
 td{
-    padding: 5%;
+    padding: 2%;
     border: solid 1px #f4f4f4;
 }
 td img{
-    width: 60px;
+    width: 50%;
     vertical-align: middle;
 }
 .raiting{
@@ -363,4 +361,70 @@ td img{
 
 .footer p{
     padding: 0 0 10px 0;
+}
+
+/*css Mobile*/
+@media only screen and (max-width : 320px) {
+      .header{
+        min-width: 100%;
+        height: 20%;
+        text-align: center;
+      }
+      .logo{
+        width: 100%;
+      }
+      .site_content{
+        width: 100%;
+      }
+      .menubar{
+        width: 50%;
+        height: 190px;
+      }
+      .site_content{
+        width: 100%;
+        text-align: center;
+      }
+      .sitebar{
+        display: none;
+      }
+      .footer{
+        display: none;
+      }
+      ul .menu{
+        float: none;
+      }
+      ul.menu li{
+        margin: 0;
+        padding: 0;
+        float: none;
+      }
+      .content{
+        width: 100%;
+        text-align: center;
+      }
+      .content iframe{
+        width: 100%;
+        height: 100%;
+      }
+      .info_film{
+        width: 90%;
+        text-align: center;
+      }
+
+      .table{
+        display: block;
+        width: 300px;
+      }
+      th{
+        font-size: 75%;
+        
+      }
+      td{
+        padding: 0;
+        margin: 0;
+        font-size: 80%;
+
+      }
+      
+      
 }

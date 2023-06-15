@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <meta name = "discription" content="Cinema site - портал вашего досуга">
     <meta name = "keywords" content="фильмы, сериалы, онлайн портал">
@@ -27,24 +27,23 @@
 
 
 <!--Меню-->        
-        <div class="menubar">
 
-            <ul class = "menu">
+<div class="menubar">
 
-                <li class = "selected"><a href = "#">Главная</a></li>
-                <li><a href = "#">Фильмы</a></li>
-                <li><a href = "#">Сериалы</a></li>
-                <li><a href = "#">Рейтинг фильмов</a></li>
-                <li><a href = "#">Контакты</a></li>
+    <ul class = "menu">
 
-            </ul>
-            
-        
-            
-        </div>
+        <li class = "selected"><a href = "#">Главная</a></li>
+        <li><a href = "#">Фильмы</a></li>
+        <li><a href = "#">Сериалы</a></li>
+        <li><a href = "#">Рейтинг фильмов</a></li>
+        <li><a href = "#">Контакты</a></li>
 
+    </ul>
+
+</div>
         
     </div>
+    
  <!--Элементы поиска, новостей, рейтинга фильмов-->   
     <div class = "site_content">
 
@@ -92,7 +91,7 @@
         </div>
             <div class="content">
                 <h1>Фильм 1</h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xm3YgoEiEDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class = "cinema" width="560" height="315" src="https://www.youtube.com/embed/xm3YgoEiEDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="info_film_page">
                     <span class = "label">Рейтинг: </span><span class = "value">0.0 </span>
                     <span class = "label">Год: </span><span class = "value">2023 </span>
@@ -108,7 +107,9 @@
                     Описание фильма Описание фильма
                     Описание фильмаОписание фильма
                     Описание фильмаОписание фильма
-                    
+                    Описание фильмаОписание фильма
+                    Описание фильмаОписание фильма
+                    Описание фильмаОписание фильма
                  
                     
                 </div>
@@ -120,17 +121,18 @@
                     <div class="review_name">Тут комментатор</div>
                     <div class="review_text">Тут текст коммента</div>
                 </div>
-
+                
             </div>
-
             <div class="send">
                 <form method="post" action="#" id = "review">
                     <input type="text" name = "review_name" placeholder = "Ваше имя">
-                    <textarea name = "review_text"></textarea>
+                    <input type="text" name = "review_text" placeholder = "Ваш комментарий">
                     <input type="submit" value = "Отправить">
                 </form>
                 
             </div>
+
+            
 
    
             </div>
