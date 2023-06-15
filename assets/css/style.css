@@ -3,10 +3,71 @@
     padding: 0;
 }
 
+body{
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #555;
+}
+
+p{
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+
+hr{
+    border: solid 1px;
+    color: #f3f3f3;
+}
+input[type = "text"], input[type ="password"], input[type="search"]{
+    color: #5d5d5d;
+    width: 60%;
+    padding: 8px;
+} 
+input, textarea{
+    outline: none;
+    border: none;
+    border: solid 1 px #f2f2f2;
+}
+
+h1, h2{
+    font: normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+}
+
+h2{
+    font-size: 140%;
+}
+
+a,a:hover{
+    outline: none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
+ul{
+    margin: 2 px 0 22px 17px;
+}
+ul li{
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5px;
+}
+
+ul{
+    margin: 2px 0 22px 17px;
+}
+ul li{
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+
+}
 
 .header{
     background-color: darkslateblue;/*Цвет фона*/
-    height: 110px;/*Высота div класса header*/
+    height: 160px;/*Высота div класса header*/
     font-size: 0.8em;/*размер шрифта*/
     margin-left: 0px;/*внешние отступы слева и справа*/
     margin-right: 0px;
@@ -21,13 +82,15 @@
 
 
 .logo{
-    width: max-content;/*ширина div с классом logo*/
-    padding-bottom: 40px;/*отступ снизу от элемента*/
+    width:max-content;/*ширина div с классом logo*/
+    padding-bottom: 0px;/*отступ снизу от элемента*/
+    text-align: center;
 }
 
 .logo h1, .logo h2{
     font:normal 300% 'century gothic', arial, sans-serif;
     margin:  0 0 0 9px;
+    
 }
 
 .logo_text h1, .logo_text h1 a, .logo_text h1 a:hover{
@@ -35,6 +98,7 @@
     color: #fff;
     letter-spacing: 0.1em;/*интервал между символами*/
     text-decoration: none;/*Подчеркивание ссылки, есть-нет*/
+    
 }
 
 .logo_text h2{
@@ -51,7 +115,7 @@
 
 ul.menu{
     background-color: darkslateblue;
-    width: max-content;
+    width: 1880px;
     
     
     
@@ -91,7 +155,136 @@ ul.menu li a:hover{/*hover - псевдокласс, меняет цвет пр�
     background-color: white;
 }
 
-.sidebar_conten{
-    float: right;
+.sitebar_content{
+    float: right;  
     width: 224px;
+}
+
+.sitebar{
+    float: right;
+    width: 222px;
+    padding: 5px;
+    border: solid 1px #f2f2f2 ;/*Рамка вокруг div, solid - тип рамки, толщина, цвет*/
+    border-radius: 5%;/*Закругление рамки*/
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sitebar h2{
+    color: #136cb2;
+}
+
+.lables_passreg_text{
+    font-size: 0.7em;
+    margin-top: 3%;
+    margin-left: 2%;
+
+}
+
+.sitebar ul{
+    margin: 0;
+}
+
+.sitebar ul li{
+    list-style-type: none;
+    margin: 0 0 0 0;
+}
+
+.sitebar .raiting_sitebar{
+    float: right;
+}
+
+.content{
+    text-align: left;
+    width: 620px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+.content a{
+    text-decoration: none;
+}
+
+.films_block{
+    margin-bottom: 5%;
+}
+.films_block img{
+    border-radius: 5px;
+    border: solid 5px #f2f2f2;
+    width: 22%;
+}
+
+.posts, .post_content{
+    font-size: 0.8em;
+}
+
+.info_film_page{
+    margin: 2%;
+    margin-bottom: 4%;
+}
+
+.info_film_page .label{
+    font-size: 1.2em;
+}
+
+.info_film_page .value{
+    font-size: 1em;
+    color: #49945a;
+    margin-right: 3%;
+}
+
+.description_film{
+    margin-bottom: 15%;
+}
+.description_film img{
+    float: left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px  #f2f2f2;
+}
+.reviews{
+margin-bottom: 4%;
+font-size: 0.9em;
+}
+.reviews .review_name{
+    background-color: #7268ad;
+    color: white;
+    padding: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.reviews .review_text{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    padding: 28px 0 5px 0;
+    text-align: center;/*отвечает за расположение текста, в данном случае центр*/
+    background-color: darkslateblue;
+    color: #a8aa94;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+.footer a{
+    color: #a8aa94;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer p{
+    padding: 0 0 10px 0;
 }
